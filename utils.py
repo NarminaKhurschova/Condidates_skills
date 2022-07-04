@@ -1,4 +1,6 @@
 import json
 
-with open ("candidates.json") as file:
-    candidates_list = json.load(file)
+def load_candidates_list():
+    with open ("candidates.json") as file:
+        candidates_list = json.load(file)
+        return candidates_list
